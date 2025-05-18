@@ -11,7 +11,7 @@ A simple, interactive web application that helps users track their **daily mood*
 
 ## 🌐 Live Preview
 
-> *[Add GitHub Pages or deployment link here if hosted](https://corehealth.netlify.app)*
+> *https://corehealth.netlify.app*
 
 ---
 
