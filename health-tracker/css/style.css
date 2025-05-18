@@ -1,0 +1,391 @@
+/* all code written by AMAN PANDEY.. */
+/* For contact: amanpandey.contactme@gmail.com */
+
+/* css/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding-bottom: 50px; /* Add some padding at the bottom for better spacing */
+}
+
+.navbar {
+    background-color: #fff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    color: #555 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Mood Tracker Styles */
+#emoji-buttons button {
+    font-size: 2em;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+#emoji-buttons button:hover {
+    transform: scale(1.1);
+}
+
+#mood-calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.mood-calendar-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    background-color: #f9f9f9;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.mood-calendar-day:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mood-calendar-day.has-mood {
+    color: white;
+}
+
+/* Water Intake Styles */
+#water-buttons button.cup-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #e0f7fa;
+    color: #00acc1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#water-buttons button.cup-button:hover {
+    background-color: #b2ebf2;
+    transform: scale(1.05);
+}
+
+#water-goal, #water-intake {
+    font-weight: bold;
+    color: #555;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #00acc1;
+    color: white;
+    text-align: center;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Breathing Animation Styles */
+#breathing-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+#breathing-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #a7d9ed;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+}
+
+#breathing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+#start-breathing, #stop-breathing {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+#start-breathing {
+    background-color: #4caf50;
+    color: white;
+}
+
+#start-breathing:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#stop-breathing {
+    background-color: #f44336;
+    color: white;
+}
+
+#stop-breathing:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Meal Log Styles */
+#meals .form-inline input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#meals .form-inline button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#meals .form-inline button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#meal-list {
+    padding: 0;
+    list-style: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+#meal-list li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#meal-list li:last-child {
+    border-bottom: none;
+}
+
+#meal-list li:hover {
+    background-color: #f0f0f0;
+}
+
+#total-calories {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Daily Summary Styles */
+#daily-summary h2 {
+    color: #28a745; /* A positive color for the summary */
+    border-bottom: 2px solid #d4edda;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#daily-summary p {
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#daily-summary h4 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+#daily-summary ul {
+    padding-left: 20px;
+}
+
+#daily-summary li {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Past Summaries Styles */
+#past-summaries {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#past-summaries h2 {
+    color: #007bff;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#past-summaries h4 {
+    color: #333;
+    margin-top: 10px;
+}
+
+#past-summaries-container {
+    margin-top: 10px;
+}
+
+.past-summary-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.past-summary-item h4 {
+    margin-top: 0;
+    color: #555;
+}
+
+.past-summary-item p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.past-summary-item h5 {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.past-summary-item ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.past-summary-item li {
+    color: #888;
+}
+
+
+
+/* footer code */
+.site-footer {
+  padding: 15px 0;
+  color: #666;
+  font-size: 0.9rem;
+  bottom: 0;
+  width: 100%;
+  /* box-shadow: 0 -1px 4px rgba(0,0,0,0.1); */
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+
+/* filter code  */
+
+/* Professional, responsive filter section */
+#summaries-filter {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#summaries-filter label {
+  margin-bottom: 0;
+  color: #333;
+}
+
+#summaries-filter .input-group .form-control {
+  border-right: 0;
+}
+
+#summaries-filter .input-group .input-group-append .btn {
+  border-left: 0;
+}
+
+#summaries-filter button {
+  min-width: 100px;
+}
+
+@media (max-width: 575px) {
+  /* Stack vertically on extra-small screens */
+  #summaries-filter {
+    text-align: center;
+    display: inline-block;
+    
+  }
+  #summaries-filter .row > div {
+    width: 100%;
+  }
+  #summaries-filter .text-sm-right {
+    text-align: center !important;
+    margin-top: 0.5rem;
+  }
+
+  #summaries-filter .btn-secondary{
+    /* background-color: #1e2c3b; */
+    margin: 1rem;
+  }
+}

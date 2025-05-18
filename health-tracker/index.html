@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Core Health</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Health Tracker</a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#mood">Mood</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#water">Water</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#breathing">Breathing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#meals">Meals</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <section id="mood">
+                <h2>Mood Tracker</h2>
+                <!-- Month Navigation -->
+                <div
+                    class="d-flex justify-content-between align-items-center mb-2">
+                    <button id="prev-month"
+                        class="btn btn-sm btn-outline-primary">&larr;
+                        Prev</button>
+                    <h4 id="calendar-title" class="mb-0"></h4>
+                    <button id="next-month"
+                        class="btn btn-sm btn-outline-primary">Next
+                        &rarr;</button>
+                </div>
+
+                <div id="emoji-buttons" class="mb-3"></div>
+                <div id="mood-calendar" class="mt-3"></div>
+            </section>
+
+            <section id="water" class="mt-4">
+                <h2>Water Intake</h2>
+                <div id="water-buttons">
+                    <button class="btn btn-outline-primary cup-button"
+                        data-amount="250">💧 Cup</button>
+                    <p class="mt-2">Daily Goal: <span
+                            id="water-goal">2000</span> ml</p>
+                    <p>Intake: <span id="water-intake">0</span> ml</p>
+                    <div class="progress mt-2">
+                        <div id="water-progress-bar" class="progress-bar"
+                            role="progressbar" style="width: 0%;"
+                            aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="2000">0%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="breathing" class="mt-4">
+                <h2>Breathing Animation</h2>
+                <div id="breathing-container">
+                    <div id="breathing-circle"></div>
+                    <p id="breathing-text">Inhale</p>
+                </div>
+                <div class="mt-2">
+                    <button id="start-breathing"
+                        class="btn btn-success">Start</button>
+                    <button id="stop-breathing" class="btn btn-danger"
+                        disabled>Stop</button>
+                </div>
+            </section>
+
+            <section id="meals" class="mt-4">
+                <h2>Meal Log</h2>
+                <div class="form-inline mb-2">
+                    <input type="text" class="form-control mr-2" id="meal-name"
+                        placeholder="Meal Name">
+                    <input type="number" class="form-control mr-2"
+                        id="meal-calories" placeholder="Calories">
+                    <button id="add-meal" class="btn btn-primary">Add
+                        Meal</button>
+                </div>
+                <ul id="meal-list" class="list-group">
+                </ul>
+                <p class="mt-2">Total Calories: <span
+                        id="total-calories">0</span></p>
+            </section>
+
+            <section id="daily-summary"
+                class="mt-5 p-4 bg-light rounded shadow-sm">
+                <h2>Today Summary</h2>
+                <p id="summary-mood">Today's Mood: Not recorded</p>
+                <p id="summary-water">Water Intake: 0 ml / Goal: 2000 ml</p>
+                <p id="summary-calories">Total Calories Consumed: 0</p>
+                <h4>Meals Logged:</h4>
+                <ul id="summary-meal-list" class="list-unstyled"></ul>
+            </section>
+
+            <section id="past-summaries"
+                class="mt-5 p-4 bg-light rounded shadow-sm">
+
+                <!-- Filter Controls -->
+                <div class="form-inline mb-3" id="summaries-filter">
+                    <label for="filter-date" class="mr-2">Filter by
+                        date:</label>
+                    <input type="date" id="filter-date"
+                        class="form-control mr-2" placeholder="YYYY-MM-DD">
+                    <button id="filter-button"
+                        class="btn btn-secondary">Apply</button>
+                    <button id="clear-filter"
+                        class="btn btn-light ml-1">Clear</button>
+                </div>
+
+                <h2>Past Day Summaries</h2>
+                <div id="past-summaries-container">
+                    <p>No past day summaries available.</p>
+                </div>
+            </section>
+
+            <button id="reset-day-button" class="btn btn-warning mt-3">End Day &
+                Reset</button>
+        </div>
+
+        <footer class="site-footer text-center mt-5">
+            <p>© 2025 AMAN PANDEY. All rights reserved.</p>
+        </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
