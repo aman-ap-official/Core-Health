@@ -4,7 +4,7 @@
 A simple, interactive web application that helps users track their **daily mood**, **water intake**, **breathing exercises**, and **meal logs**, with summaries and data persistence using `localStorage`.
 
 <p align="center">
-  <a href="https://github.com/aman-ap-official" target="_blank">Visit My GitHub</a> • <a href="https://github.com/aman-ap-official/Animation-in-html/blob/main/License">License</a>
+  <a href="https://github.com/aman-ap-official" target="_blank">Visit My GitHub</a> • <a href="https://github.com/aman-ap-official/Core-Health/blob/main/LICENSE.txt">License</a>
 </p>
 
 ---
