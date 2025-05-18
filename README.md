@@ -83,7 +83,7 @@ health-tracker/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/health-tracker.git
+git clone https://github.com/aman-ap-official/Core-Health
 cd health-tracker
 ```
 
