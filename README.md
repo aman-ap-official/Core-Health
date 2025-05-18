@@ -147,7 +147,10 @@ Handles all interactivity:
 
 ## 📷 Screenshots (Optional)
 
-> Add screenshots showing different sections like Mood Calendar, Water Progress, Breathing Circle, Meal Log, Summary.
+> ![Image](https://github.com/user-attachments/assets/9d6f56f4-13a1-40e0-ac82-a4a38891ea9a)
+> ![Image](https://github.com/user-attachments/assets/d26098f1-4c4c-4c02-b56d-f8d36f4c4695)
+> ![Image](https://github.com/user-attachments/assets/d816f130-28e3-470f-8164-b32353b8629d)
+> ![Image](https://github.com/user-attachments/assets/6745fcee-96ce-470d-89a3-4e3d6dae3d92)
 
 ---
 
