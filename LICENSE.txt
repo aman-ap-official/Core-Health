@@ -1,0 +1,15 @@
+Proprietary License
+
+Copyright (c) 2025 AMAN PANDEY
+
+Permission is granted to use this software **only via its official web application**.
+
+The source code is provided for reference and review only. Users are strictly prohibited from:
+- Copying, modifying, or redistributing the code.
+- Editing or reusing any portion of the codebase.
+- Using the code in other software or websites.
+- Selling, sublicensing, or commercializing the software in any form.
+
+The software is provided "as is", without warranty of any kind. The author holds no liability for any damage arising from the use of this software.
+
+By accessing this software, you agree to abide by these terms.
