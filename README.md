@@ -145,7 +145,7 @@ Handles all interactivity:
 
 ---
 
-## 📷 Screenshots (Optional)
+## 📷 Screenshots 
 
 > ![Image](https://github.com/user-attachments/assets/d816f130-28e3-470f-8164-b32353b8629d)
 > ![Image](https://github.com/user-attachments/assets/d26098f1-4c4c-4c02-b56d-f8d36f4c4695)
